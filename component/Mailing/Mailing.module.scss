@@ -1,0 +1,184 @@
+.Mailing {
+  min-height: 478px;
+  width: 100vw;
+  background: url("../../public/HTS_back.svg") no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > div {
+    height: 100%;
+    height: 258px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 634px) {
+      height: 320px;
+    }
+    > p {
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 140%;
+      text-align: center;
+      color: #ffffff;
+      @media (max-width: 400px) {
+        font-size: 18px;
+      }
+    }
+    > h6 {
+      font-family: "Noto Serif";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 41px;
+      text-align: center;
+      color: #ffffff;
+      margin: 15px 0 60px 0;
+      @media (max-width: 634px) {
+        margin: 15px 0 30px 0;
+      }
+      @media (max-width: 400px) {
+        font-size: 25px;
+      }
+    }
+    > main {
+      height: 113px;
+      width: 95vw;
+      max-width: 773px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      > ul {
+        height: 100%;
+        width: 245px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @media (max-width: 700px) {
+          align-items: center;
+          width: 95vw;
+          max-width: 390px;
+          margin-bottom: 20px;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 20px;
+            @media (max-width: 700px) {
+              display: none;
+            }
+          }
+          p {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 140%;
+            color: #ffffff;
+            @media (max-width: 700px) {
+              text-align: center;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      > div {
+        max-width: 448px;
+        width: 96vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffffff;
+        padding: 15px;
+        @media (max-width: 410px) {
+          padding: 10px;
+        }
+
+        > label {
+          max-width: 418px;
+          width: 100%;
+          height: 85px;
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > input {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            width: 200px;
+            height: 45px;
+            background: #ffffff;
+            border: 1px solid #d6d6d6;
+            padding: 15px 20px;
+            margin-right: 15px;
+            @media (max-width: 410px) {
+              width: 180px;
+              height: 40px;
+              font-weight: 200;
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: 0.05em;
+              margin-right: 10px;
+            }
+            @media (max-width: 370px) {
+              width: 140px;
+              height: 35px;
+            }
+            &::placeholder {
+              text-transform: uppercase;
+              color: rgba(51, 51, 51, 0.5);
+            }
+          }
+          > button {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #ffffff;
+            width: 159px;
+            height: 45px;
+            background: #333333;
+            border: 1px solid #ffffff;
+            transition: 300ms;
+            &:hover {
+              transform: scale(1.03);
+              background: #ffffff;
+              border: 1px solid #333333;
+              color: #333333;
+            }
+            @media (max-width: 410px) {
+              width: 120px;
+              height: 40px;
+              font-weight: 200;
+              font-size: 12px;
+              line-height: 14px;
+            }
+            @media (max-width: 370px) {
+              width: 100px;
+              height: 35px;
+              font-weight: 200;
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
